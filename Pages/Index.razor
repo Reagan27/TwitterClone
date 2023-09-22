@@ -1,13 +1,37 @@
-﻿<!-- Index.razor -->
-@page "/"
+﻿@page "/"
+@using TwitterClone.Services
+@using TwitterClone.Models
+@inject ICommentInterface CommentService
+@inject IPostInterface PostService
 
-<h3>Welcome to Blazor Twitter Clone</h3>
-
-<div class="container">
-    <div class="column">
-        <UserList />
-    </div>
-    <div class="column">
-        <PostList />
+<div>
+    @foreach (var post in posts)
+    {
+        <div>
+            <p>@post.title</p>
+            <p>@post.body</p>
+        </div>
+    }
+    
+    <div>
+        @foreach (var comment in comments)
+        {
+            <div>
+                <p>@comment.email</p>
+                <p>@comment.body</p>
+                <p>@comment.name</p>
+            </div>
+        }
     </div>
 </div>
+
+@code {
+    private List<Comment> comments = new List<Comment>();
+    private List<Post> posts = new List<Post>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        
+        posts = await PostService.GetPostAsync();
+    }
+}

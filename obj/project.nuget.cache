@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UeArMPN80iujQS+VHhLA1dJHDXDyWaduxzxkVJRgvKHCsdDfNJq2B/rtPehdv6M0PZFhGBBxBzNLoCuWVjFOcA==",
+  "dgSpecHash": "tDbI1XYzCIaqVwUwHHH1/ZbienuXarjvb4Ubjh+35L3DceRrs7J1fSUZRqi8BIYuOpEweIXADcSB8V8ayfhQWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo Ideapad S340\\source\\repos\\TwitterClone\\TwitterClone.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\microsoft.jsinterop\\7.0.11\\microsoft.jsinterop.7.0.11.nupkg.sha512",
     "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.11\\microsoft.jsinterop.webassembly.7.0.11.nupkg.sha512",
+    "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo Ideapad S340\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",

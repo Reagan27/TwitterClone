@@ -1,9 +1,16 @@
-﻿
-public class Comment
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace TwitterClone.Models
 {
-    public int PostId { get; set; }
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public string Body { get; set; }
-    
+    public class Comment
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public string email { get; set; }
+        public string body { get; set; }
+        public int postId { get; set; }
+    }
 }
