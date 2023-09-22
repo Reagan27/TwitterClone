@@ -1,0 +1,6 @@
+C:\Users\Lenovo Ideapad S340\source\repos\TwitterClone\obj\Debug\net7.0\TwitterClone.csproj.AssemblyReference.cache
+C:\Users\Lenovo Ideapad S340\source\repos\TwitterClone\obj\Debug\net7.0\TwitterClone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo Ideapad S340\source\repos\TwitterClone\obj\Debug\net7.0\TwitterClone.AssemblyInfoInputs.cache
+C:\Users\Lenovo Ideapad S340\source\repos\TwitterClone\obj\Debug\net7.0\TwitterClone.AssemblyInfo.cs
+C:\Users\Lenovo Ideapad S340\source\repos\TwitterClone\obj\Debug\net7.0\TwitterClone.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo Ideapad S340\source\repos\TwitterClone\obj\Debug\net7.0\TwitterClone.MvcApplicationPartsAssemblyInfo.cache

@@ -1,0 +1,23 @@
+﻿<!-- UserList.razor -->
+@page "/users"
+
+<h3>User List</h3>
+
+<ul>
+    @foreach (var user in users)
+    {
+        <li @onclick="() => SelectUser(user.Id)">@user.Name</li>
+    }
+</ul>
+
+@code {
+    private List<User> users = new List<User>(); // 
+    private int selectedUserId;
+
+    private async Task SelectUser(int userId)
+    {
+        selectedUserId = userId;
+        
+    }
+}
+

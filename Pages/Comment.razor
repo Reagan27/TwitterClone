@@ -1,0 +1,28 @@
+﻿<!-- CommentList.razor -->
+@using TwitterClone.Models
+@inject ApiService apiService
+
+@page "/comments"
+
+@code {
+    [Parameter]
+    public int PostId { get; set; }
+
+    private List<Comment> comments = new List<Comment>(); // Populate this from ApiService
+
+    protected override async Task OnParametersSetAsync()
+    {
+        comments = await apiService.GetCommentsAsync(PostId);
+    }
+}
+
+<h5>Comments</h5>
+
+<ul>
+    @foreach (var comment in comments)
+    {
+        <li>
+            <strong>@comment.Name</strong>: @comment.Body
+        </li>
+    }
+</ul>

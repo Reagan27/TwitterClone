@@ -1,0 +1,31 @@
+﻿<!-- PostList.razor -->
+@page "/posts"
+
+<h3>Posts</h3>
+
+<ul>
+    @foreach (var post in posts)
+    {
+        <li @onclick="() => SelectPost(post.Id)">@post.Title</li>
+    }
+</ul>
+
+@if (selectedPost != null)
+{
+    <h4>@selectedPost.Title</h4>
+    <p>@selectedPost.Body</p>
+
+    <h5>Comments</h5>
+    <CommentList PostId="@selectedPost.Id" />
+}
+
+@code {
+    private List<Post> posts = new List<Post>(); // Populate this from ApiService
+    private Post selectedPost;
+
+    private async Task SelectPost(int postId)
+    {
+        selectedPost = posts.FirstOrDefault(p => p.Id == postId);
+        // Fetch and display comments for the selected post
+    }
+}
